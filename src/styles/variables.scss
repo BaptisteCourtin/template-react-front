@@ -1,29 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400;500;600;700;800&display=swap');
+// font-family: 'Handjet', cursive;
 
-$white: rgb(250, 250, 250);
-$black: rgb(12, 12, 12);
-$gray: rgb(231, 231, 231);
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+// font-family: 'Manrope', sans-serif;
 
-$first: #54f2f2;
-$second: #57467b;
-$third: #ffee93;
-$fourth: #f4a5ae;
-$fifth: #f5d7e3;
+// global
+:root {
+  --white: #efefef;
+  --soft-white: #c4d5d8;
+  --black: #131313;
+  --soft-black: #2d3132;
 
-$gradient: linear-gradient(
-  to left top,
-  #f5d7e3,
-  #f5cad8,
-  #f5becc,
-  #f5b1be,
-  #f4a5ae
-);
+  --gold-light: #ffd700;
+  --gold-dark: #ff8000;
 
-$h1: 4rem;
-$h2: 3rem;
-$h3: 2rem;
-$h4: 1.5rem;
+  --blue-light: #00d0ff;
+  --blue-dark: #00d0ff;
 
-$title: "Faustina", serif;
-$text: "Open Sans", sans-serif;
+  --violet-light: #c838e9;
+  --violet-dark: #c838e9;
+
+  // ---
+
+  --font-title: 'Handjet', cursive;
+  --font-text: 'Manrope', sans-serif;
+
+  --fs-h1: 5rem;
+  --fw-h1: 800;
+  --fs-h2: 3rem;
+  --fw-h2: 700;
+  --fs-h3: 2.5rem;
+  --fw-h3: 600;
+  --fs-h4: 2rem;
+  --fw-h4: 500;
+}
+
+// light theme
+:root {
+  --background: var(--white);
+  --background-soft: var(--soft-white);
+
+  --color: var(--black);
+  --color-soft: var(--soft-black);
+
+  --gold: var(--gold-dark);
+  --blue: var(--blue-dark);
+  --violet: var(--violet-dark);
+}
+
+// dark theme
+.dark-theme {
+  --background: var(--black);
+  --background-soft: var(--soft-black);
+
+  --color: var(--white);
+  --color-soft: var(--soft-white);
+
+  --gold: var(--gold-light);
+  --blue: var(--blue-dark);
+  --violet: var(--violet-dark);
+}

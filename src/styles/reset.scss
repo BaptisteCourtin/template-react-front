@@ -6,45 +6,54 @@
   font-size: 100%;
 }
 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
 }
 
 body {
-  line-height: 1;
   min-height: 100%;
-
-  background: $white;
-  color: $black;
+  background: var(--background);
 
   font-size: 1rem;
-  font-family: $text;
+  font-family: var(--font-text);
+}
+
+p {
+  line-height: 1.3rem;
 }
 
 h1,
 h2,
-h3 {
-  font-family: $title;
+h3,
+h4 {
+  font-family: var(--font-title);
 }
 
 h1 {
-  font-size: $h1;
-  font-weight: 800;
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-h1);
 }
 
 h2 {
-  font-size: $h2;
-  font-weight: 700;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
 }
 
 h3 {
-  font-size: $h3;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-h3);
 }
 
 h4 {
-  font-size: $h4;
-  font-weight: 600;
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-h4);
 }
 
 button {
@@ -53,6 +62,7 @@ button {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ol,
@@ -66,6 +76,14 @@ table {
 }
 
 // ---
+
+.ICI {
+  font-weight: 800;
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* --- */
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {

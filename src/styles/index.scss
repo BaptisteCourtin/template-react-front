@@ -1,7 +1,9 @@
-@import "./variables.scss";
 @import "./reset.scss";
+@import "./variables.scss";
+@import "../global.scss";
 
-// --- pages ---
-@import "./pages/home.scss";
+@import "../components/navbar.scss";
+@import "../components/toggleDarkLight.scss";
+@import "../components/footer.scss";
 
-// --- components ---
+@import "../pages/home.scss";

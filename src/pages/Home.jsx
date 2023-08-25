@@ -8,13 +8,8 @@ function Home() {
       <h3>Hello World</h3>
       <h4>Hello World</h4>
       <br />
-      <div className="first" />
-      <div className="second" />
-      <div className="third" />
-      <div className="fourth" />
-      <div className="fifth" />
       <br />
-      <p>there is sass and browserRouter</p>
+      <p>there is sass and browserRouter and react icon</p>
       <p>try /details</p>
     </div>
   );

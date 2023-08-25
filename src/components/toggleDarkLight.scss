@@ -1,0 +1,73 @@
+.toggle-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input#toggle {
+    display: none;
+  }
+
+  label.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 500px;
+    height: 40px;
+    width: 70px;
+    transition: 0.3s ease-in-out;
+
+    .icon {
+      width: 50%;
+      font-size: 25px;
+      text-align: center;
+      z-index: 5;
+
+      &.sun {
+        color: white;
+      }
+
+      &.moon {
+        color: black;
+      }
+    }
+
+    .ball {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  /* -- light -- */
+
+  &.light-theme label.toggle {
+    background: linear-gradient(
+      -145deg,
+      rgba(0, 0, 0, 0.2),
+      rgb(236, 236, 236)
+    );
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+    .ball {
+      background-color: black;
+      transform: translateX(3px);
+    }
+  }
+
+  /* -- dark -- */
+
+  &.dark-theme label.toggle {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgb(0, 0, 0));
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+
+    .ball {
+      background-color: white;
+      transform: translateX(38px);
+    }
+  }
+}

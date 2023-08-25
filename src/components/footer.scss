@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-soft);
+
+  padding: 2rem;
+  height: 70px;
+  min-width: 100%;
+
+  gap: 5rem;
+  z-index: 10;
+}
